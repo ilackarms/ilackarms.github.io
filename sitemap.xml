@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ilackar.ms/code/</loc>
+    <lastmod>2016-11-06T13:00:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/contact/</loc>
+    <lastmod>2016-11-06T13:00:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/about/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/artwork/ignore/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/artwork/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ilackar.ms/tags/</loc>
+  </url>
+  
+</urlset>
