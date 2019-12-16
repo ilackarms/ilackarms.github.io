@@ -45,17 +45,20 @@ if (!doNotTrack) {
 
 
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-  <div id="all">
-      <div class="container-fluid">
-          <div class="row row-offcanvas row-offcanvas-left">
-              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+<div id="all">
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div>
+                <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="https://ilackar.ms/">Scott Weiss</a></h1>
     
       <p class="sidebar-p">Exploring the hallways of always.</p>
     
-      <p class="sidebar-p">I code, I paint, and I complain. Originally from Long Island, NY, I'm currently based in Boston.</p>
+      <p class="sidebar-p">I code, I paint, and I complain. Originally from Long Island, NY. Currently based in Boston.</p>
     
     <ul class="sidebar-menu">
       
@@ -114,7 +117,9 @@ if (!doNotTrack) {
   </div>
 </div>
 
-              
+            </div>
+            <div id="content">
+                
   <div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
     <div class="small-navbar visible-xs">
   <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
@@ -134,10 +139,11 @@ if (!doNotTrack) {
     </div>
   </div>
 
-          </div>
-      </div>
-  </div>
-  <script src="https://ilackar.ms/js/jquery.min.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ilackar.ms/js/jquery.min.js"></script>
 <script src="https://ilackar.ms/js/bootstrap.min.js"></script>
 <script src="https://ilackar.ms/js/jquery.cookie.js"> </script>
 <script src="https://ilackar.ms/js/ekko-lightbox.js"></script>
@@ -151,7 +157,7 @@ if (!doNotTrack) {
 
 
 
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>
 			var $event = $.event,
 			$special,
@@ -439,7 +445,7 @@ if (!doNotTrack) {
 						if( $item ) {
 							this.$item = $item;
 						}
-						
+
 						if( current !== -1 ) {
 							var $currentItem = $items.eq( current );
 							$currentItem.removeClass( 'og-expanded' );
@@ -455,7 +461,7 @@ if (!doNotTrack) {
 								largesrc : $itemEl.data( 'largesrc' ),
 								title : $itemEl.data( 'title' ),
 								description : $itemEl.data( 'description' ),
-								buttontext : $itemEl.data( 'buttontext' )
+								buttontext : $itemEl.data( 'buttontext' ) + "a b c"
 							};
 
 						this.$title.html( eldata.title );
@@ -472,13 +478,14 @@ if (!doNotTrack) {
 						}
 
 						var self = this;
-						
+
 						if( typeof self.$largeImg != 'undefined' ) {
 							self.$largeImg.remove();
 						}
 
-						if( self.$fullimage.is( ':visible' ) ) {
+						
 							this.$loading.show();
+
 							$( '<img/>' ).load( function() {
 								var $img = $( this );
 								if( $img.attr( 'src' ) === self.$item.children('a').data( 'largesrc' ) ) {
@@ -487,13 +494,13 @@ if (!doNotTrack) {
 									self.$largeImg = $img.fadeIn( 350 );
 									self.$fullimage.append( self.$largeImg );
 								}
-							} ).attr( 'src', eldata.largesrc );	
-						}
+							} ).attr( 'src', eldata.largesrc );
+						
 
 					},
 					open : function() {
 
-						setTimeout( $.proxy( function() {	
+						setTimeout( $.proxy( function() {
 							this.setHeights();
 							this.positionPreview();
 						}, this ), 25 );
@@ -524,7 +531,7 @@ if (!doNotTrack) {
 							}
 
 						}, this ), 25 );
-						
+
 						return false;
 
 					},
@@ -541,9 +548,9 @@ if (!doNotTrack) {
 						this.height = heightPreview;
 						this.itemHeight = itemHeight;
 
+						console.log(this);
 					},
 					setHeights : function() {
-
 						var self = this,
 							onEndFn = function() {
 								if( support ) {

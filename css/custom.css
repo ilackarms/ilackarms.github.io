@@ -90,7 +90,7 @@ a {
 
 .og-grid li {
     display: inline-block;
-    margin: 10px 5px 0 5px;
+    margin: 10px 5px 80px 5px;
     vertical-align: top;
     height: 250px;
 }
@@ -169,10 +169,10 @@ a {
 
 .og-fullimg,
 .og-details {
-    width: 50%;
+    /*width: 50%;*/
     float: left;
-    height: 100%;
-    overflow: hidden;
+    /*height: 100%;*/
+    /*overflow: hidden;*/
     position: relative;
 }
 
@@ -269,9 +269,9 @@ a {
 
 }
 
-@media screen and (max-width: 650px) {
+/*@media screen and (max-width: 650px) {*/
 
-    .og-fullimg { display: none; }
-    .og-details { float: none; width: 100%; }
+/*    .og-fullimg { display: none; }*/
+/*    .og-details { float: none; width: 100%; }*/
 
-}
+/*}*/
