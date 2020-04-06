@@ -1,7 +1,9 @@
 /* General Demo Style */
 @import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
 
-html { height: 100%; }
+html {
+    height: 100%;
+}
 
 *,
 *:after,
@@ -85,7 +87,7 @@ a {
     padding: 20px 0;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .og-grid li {
@@ -109,7 +111,7 @@ a {
     content: " ";
     height: 0;
     width: 0;
-    position: absolute;
+    position: relative;
     pointer-events: none;
     border-bottom-color: #ddd;
     border-width: 15px;
@@ -126,7 +128,7 @@ a {
     margin-top: 10px;
     text-align: left;
     height: 0;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .og-expander-inner {
@@ -172,7 +174,7 @@ a {
     /*width: 50%;*/
     float: left;
     /*height: 100%;*/
-    /*overflow: hidden;*/
+    overflow: visible;
     position: relative;
 }
 
@@ -244,28 +246,60 @@ a {
 }
 
 @-webkit-keyframes loader {
-    0% { background: #ddd; }
-    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    0% {
+        background: #ddd;
+    }
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
 }
 
 @-moz-keyframes loader {
-    0% { background: #ddd; }
-    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    0% {
+        background: #ddd;
+    }
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
 }
 
 @keyframes loader {
-    0% { background: #ddd; }
-    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    0% {
+        background: #ddd;
+    }
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
 }
 
 @media screen and (max-width: 830px) {
 
-    .og-expander h3 { font-size: 32px; }
-    .og-expander p { font-size: 13px; }
-    .og-expander a { font-size: 12px; }
+    .og-expander h3 {
+        font-size: 32px;
+    }
+
+    .og-expander p {
+        font-size: 13px;
+    }
+
+    .og-expander a {
+        font-size: 12px;
+    }
 
 }
 
